@@ -11,10 +11,6 @@ setup(
     download_url = 'https://github.com/vgonisanz/pyExeManager/archive/1.0.tar.gz',
     keywords = ['executable', 'io', automation],
     classifiers = ['Programming Language :: Python',
-                   'Programming Language :: Python :: 2.7',
-                   'Programming Language :: Python :: 3.2',
-                   'Programming Language :: Python :: 3.3',
-                   'Programming Language :: Python :: 3.4',
                    'Programming Language :: Python :: 3.5',
                    'Programming Language :: Python :: 3.6'],
 )

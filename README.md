@@ -2,7 +2,7 @@
 
 Sample to manage a binary using python under GNU LGPL v3.0 license.
 
-**pyExeManager** is compatible with Python-2 and Python-3.
+**pyExeManager** is compatible with Python-3.5 and greater versions.
 
 # Using
 
