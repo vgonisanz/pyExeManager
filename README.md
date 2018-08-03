@@ -6,11 +6,17 @@ Sample to manage a binary using python under GNU LGPL v3.0 license.
 
 # Using
 
-You can run the examples directly:
+Clone the repository:
 
 ```
 $ git clone git@github.com:vgonisanz/pyExeManager.git
-$ python samples/sample.py
+```
+
+Execute basic sample:
+
+```
+$ cd samples
+$ python3 basic.py
 ```
 
 # What is this example intended for?
