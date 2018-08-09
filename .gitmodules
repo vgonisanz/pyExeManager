@@ -1,0 +1,3 @@
+[submodule "3rdParty/tftpy"]
+	path = 3rdParty/tftpy
+	url = git://github.com/msoulier/tftpy.git
