@@ -1,8 +1,14 @@
 # pyExeManager
 
-Sample to manage a binary using python under GNU LGPL v3.0 license.
+Samples using python to manage:
 
-**pyExeManager** is compatible with Python-3.5 and greater versions.
+* custom binary (local)
+* telnet session (against localhost server provided)
+* TFTP (against localhost server provided) 
+
+The license is GNU LGPL v3.0 license.
+
+**pyExeManager** is compatible with Python-3.5 and greater versions. For now, telnet server use python2.
 
 # Using
 
@@ -12,14 +18,14 @@ Clone the repository:
 $ git clone git@github.com:vgonisanz/pyExeManager.git
 ```
 
-Execute basic sample:
+## Executable sample
 
 ```
 $ cd samples
 $ python3 basic.py
 ```
 
-# What is this example intended for?
+### What is this example intended for?
 
 This should be used as an example to manage a binary. In this case,
 `bin/playersample` is used. It is a simple menu that expect user
@@ -98,3 +104,36 @@ Version References:
 
 If you have problem with the binary, you can compile it cloning the code
 from [this other](https://github.com/vgonisanz/memdynedition) repository.
+
+## Telnet session
+
+Execute in one terminal the server:
+
+```
+python2 telnet_server.py
+```
+
+The server will start running:
+
+```
+Launching server at port: 8023
+Listening...
+```
+
+Now connect manually and check behavior (require telnet binary installed), in GNU/Linux try:
+
+```
+telnet localhost 8023
+```
+
+Execute auto-session:
+
+```
+python3 telnet_client.py
+```
+
+You can inspect server logs to confirm you are connecting propertly.
+
+### What is this example intended for?
+
+This sample teach you how run a basic server and to interact automatically.
