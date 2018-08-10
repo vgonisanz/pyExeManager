@@ -36,8 +36,8 @@ def wait_for_prompt():
 
 def main():
     global tn
-    print("Connecting to %s:%s" % (str(settings.HOST), str(settings.PORT)))
-    tn = telnetlib.Telnet(settings.HOST, settings.PORT)
+    print("Connecting to %s:%s" % (str(settings.HOST), str(settings.TELNET_PORT)))
+    tn = telnetlib.Telnet(settings.HOST, settings.TELNET_PORT)
     time.sleep(1)
 
     try:

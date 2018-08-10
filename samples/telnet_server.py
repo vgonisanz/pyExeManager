@@ -58,8 +58,8 @@ class TelnetHandler(TelnetHandler):
             self.writeresponse("  %r" % c)
 
 def main():
-    print("Launching server at port: %s" % settings.PORT)
-    server = gevent.server.StreamServer(("", settings.PORT), TelnetHandler.streamserver_handle)
+    print("Launching TELNET server at port: %s" % settings.TELNET_PORT)
+    server = gevent.server.StreamServer(("", settings.TELNET_PORT), TelnetHandler.streamserver_handle)
     print("Listening...")
     server.serve_forever()
 
