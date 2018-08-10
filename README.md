@@ -4,7 +4,7 @@ Samples using python to manage:
 
 * custom binary (local)
 * telnet session (against localhost server provided)
-* TFTP (against localhost server provided) 
+* TFTP (against localhost server provided)
 
 The license is GNU LGPL v3.0 license.
 
@@ -107,6 +107,8 @@ from [this other](https://github.com/vgonisanz/memdynedition) repository.
 
 ## Telnet session
 
+* [Official documentation](https://docs.python.org/2/library/telnetlib.html)
+
 Execute in one terminal the server:
 
 ```
@@ -137,3 +139,31 @@ You can inspect server logs to confirm you are connecting propertly.
 ### What is this example intended for?
 
 This sample teach you how run a basic server and to interact automatically.
+
+## TFTP server/client
+
+* [Official documentation](http://tftpy.sourceforge.net/sphinx/index.html)
+
+Execute in one terminal the server:
+
+```
+python3 tftpy_server.py
+```
+
+The server will start running:
+
+```
+Launching TELNET server at port: 8024
+Serving path: $(REPO_PATH)/tftpboot
+Listening...
+```
+
+Now connect run client that automatically get the file at download folder:
+
+```
+python3 tftpy_client.py
+```
+
+### What is this example intended for?
+
+This sample teach you how run a basic TFTP server and to download automatically.
